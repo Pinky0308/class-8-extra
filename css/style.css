@@ -1,0 +1,146 @@
+/* Common css Starts */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+/* Common css ends */
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.row{
+    display:flex;
+    flex-wrap: wrap;
+}
+body{
+    font-family: sans-serif;
+}
+/*header css starts*/
+header {
+    background-color: #ddd;
+    width:1140px;
+    margin:auto;
+}
+header div{
+    display: flex;
+}
+header .logo{
+    width: 20%;
+}
+header .logo img{
+    width: 100%;
+}
+header .menu{
+    width: 80%;
+}
+/*header css ends*/
+/*Navigation css starts*/
+nav .container > ul{
+    list-style-type: none;
+    display: flex;
+    background-color: palevioletred;
+    height:50px;
+}
+nav ul li{
+    position: relative;
+}
+nav ul li a{
+    color: black;
+    display: block;
+    padding: 10px 15px;
+    transition: all 0.4s linear;
+}
+nav ul li a:hover{
+    color:red;
+}
+nav ul li:hover > a{
+    background-color: whitesmoke;
+    height: 50px;
+}
+nav ul li > ul{
+    position: absolute;
+    left:10px;
+    top: 140%;
+    visibility:hidden;
+    opacity: 0;
+    transition: all 0.4s linear;
+    list-style-type: none;
+    min-width: 160px;
+}
+nav ul li:hover > ul{
+    visibility: visible;
+    opacity: 1;
+    top:100%;
+    background-color: peachpuff;
+}
+nav ul li ul li ul{
+    left: 100%;
+    top: 100%;
+}
+nav ul li ul li:hover > ul{
+    top:0;
+}
+
+/*Navigation css ends*/
+/*item part starts*/
+.flex_box{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.items{
+    width:35%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 0.5px solid black;
+}
+.item{
+    width: calc(100% / 3);
+    height:100px;
+    background-color: aqua;
+    border: 1px solid black;
+    text-align: center;
+}
+.description{
+    width:65%;
+    border: 1px solid black;
+    background-color: aqua;
+}
+.description h3{
+    text-align: center;
+}
+/*item part ends*/
+#main .row{
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.di{
+    background-color: blueviolet;
+    height: 100px;
+    width: calc(100% / 3 - 20px);
+    text-align: center;
+    box-shadow: inset 5px 5px 50px black,
+                5px 5px 25px green;
+                
+}
+h1{
+    width:1140px;
+    margin:auto;
+    text-align: center;
+    margin-top: 50px;
+    color: #FFFFFF;
+    background: #232323;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF,
+     0 0 15px #FFF, 0 0 20px #49ff18, 
+     0 0 30px #49FF18, 0 0 40px #49FF18, 
+     0 0 55px #49FF18, 0 0 75px #49ff18;
+}
